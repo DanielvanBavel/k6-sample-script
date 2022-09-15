@@ -8,5 +8,7 @@ export const options = {
 }
 
 export default function() {
-    http.get(`${env.devEnvironment}`)    
+    http.get(`${env.RPi1}`)
+    http.get(`${env.RPi2}`) 
+    http.get(`${env.RPi3}`) 
 }

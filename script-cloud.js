@@ -3,9 +3,9 @@ import { sleep } from 'k6';
 
 export const options = {
     stages: [
-        { duration: '2m', target: 50 },
+        { duration: '1m', target: 50 },
         { duration: '4m', target: 50 },
-        { duration: '2m', target: 0 },
+        { duration: '1m', target: 0 },
     ],
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
@@ -14,6 +14,6 @@ export const options = {
 };
 
 export default function () {
-  http.get('https://test.k6.io/');
+  http.get('https://meettheexperts.nl/');
   sleep(1);
 }
