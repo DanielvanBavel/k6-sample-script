@@ -14,6 +14,6 @@ export const options = {
 };
 
 export default function () {
-  http.get('https://meettheexperts.nl/');
+  http.get('https://meettheexperts.nl');
   sleep(1);
 }
